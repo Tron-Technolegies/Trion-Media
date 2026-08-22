@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #C8A96A;
+  --color-white-touch: #F5F5F5;
+  --font-poppins: "Poppins", sans-serif;
+  --font-playfair: "Playfair Display", serif;
+  --font-montserrat: "Montserrat", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-black text-white-touch font-poppins;
+  }
+}
