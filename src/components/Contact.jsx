@@ -17,11 +17,11 @@ const Contact = () => {
             Whether you're launching a new brand, promoting a business, or needing memorable visual content, we're here to help.
           </p>
           <div className="flex flex-wrap gap-5">
-            <button className="bg-gold text-black px-10 py-[14px] font-montserrat tracking-[0.15em] text-[10px] font-medium hover:bg-white-touch transition-all duration-300">
+            <button className="bg-gold text-black px-10 py-[14px] font-montserrat tracking-[0.15em] text-[10px] font-medium hover:bg-white-touch transition-all duration-300 cursor-pointer">
               EMAIL THE STUDIO
             </button>
-            <button className="border border-white-touch/20 text-white-touch px-10 py-[14px] font-montserrat tracking-[0.15em] text-[10px] font-medium hover:border-gold hover:text-gold transition-all duration-300">
-              +974 7777 9428
+            <button className="border border-white-touch/20 text-white-touch px-10 py-[14px] font-montserrat tracking-[0.15em] text-[10px] font-medium hover:border-gold hover:text-gold transition-all duration-300 cursor-pointer">
+              +974 71741112
             </button>
           </div>
         </div>
@@ -39,21 +39,21 @@ const Contact = () => {
           <div className="flex items-center space-x-4 border-b border-white-touch/10 pb-6">
             <FaPhoneAlt className="text-gold text-sm flex-shrink-0" />
             <span className="text-white-touch/80 font-poppins font-light text-[13px]">
-              +974 7777 9428
+              +974 71741112
             </span>
           </div>
 
           <div className="flex items-center space-x-4 border-b border-white-touch/10 pb-6">
             <FaEnvelope className="text-gold text-sm flex-shrink-0" />
             <span className="text-white-touch/80 font-poppins font-light text-[13px]">
-              hello@trionmedia.com
+              info@trionmediaphotography.com
             </span>
           </div>
 
           <div className="flex items-center space-x-4 border-b border-white-touch/10 pb-6">
             <FaGlobe className="text-gold text-sm flex-shrink-0" />
             <span className="text-white-touch/80 font-poppins font-light text-[13px]">
-              www.trionmedia.com
+              trionmediaphotography.com
             </span>
           </div>
 
@@ -62,9 +62,14 @@ const Contact = () => {
               SOCIAL &mdash; TRION MEDIA
             </span>
             <div className="flex flex-wrap gap-2">
-              {['INSTAGRAM', 'FACEBOOK', 'LINKEDIN', 'YOUTUBE'].map((social, index) => (
-                <a key={index} href="#" className="px-3 py-2 border border-white-touch/10 text-[8px] font-montserrat tracking-[0.1em] text-white-touch/60 hover:text-gold hover:border-gold transition-colors duration-300">
-                  {social}
+              {[
+                { name: 'INSTAGRAM', url: 'https://www.instagram.com/trion_media_qa?igsi=MW81NWZ1ZjBtOTZpYg==' },
+                { name: 'FACEBOOK', url: '#' },
+                { name: 'LINKEDIN', url: '#' },
+                { name: 'YOUTUBE', url: '#' }
+              ].map((social, index) => (
+                <a key={index} href={social.url} target="_blank" rel="noopener noreferrer" className="px-3 py-2 border border-white-touch/10 text-[8px] font-montserrat tracking-[0.1em] text-white-touch/60 hover:text-gold hover:border-gold transition-colors duration-300">
+                  {social.name}
                 </a>
               ))}
             </div>

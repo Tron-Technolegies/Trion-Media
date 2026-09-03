@@ -51,7 +51,7 @@ const FAQ = () => {
               className="border-b border-white-touch/10"
             >
               <button
-                className="w-full flex justify-between items-center py-8 text-left group"
+                className="w-full flex justify-between items-center py-8 text-left group cursor-pointer"
                 onClick={() => toggleFAQ(index)}
               >
                 <span className={`text-[15px] font-poppins font-light transition-colors duration-300 ${activeIndex === index ? 'text-gold' : 'text-white-touch group-hover:text-gold'}`}>

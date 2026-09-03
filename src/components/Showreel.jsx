@@ -22,7 +22,7 @@ const Showreel = () => {
           Explore a collection of our latest productions showcasing cinematic storytelling, commercial campaigns, and creative visual experiences.
         </p>
         
-        <button className="w-16 h-16 rounded-full border border-gold flex items-center justify-center text-gold hover:bg-gold hover:text-black transition-all duration-300 group">
+        <button className="w-16 h-16 rounded-full border border-gold flex items-center justify-center text-gold hover:bg-gold hover:text-black transition-all duration-300 group cursor-pointer">
           <FaPlay className="ml-1 text-sm group-hover:scale-110 transition-transform" />
         </button>
       </div>

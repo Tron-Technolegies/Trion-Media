@@ -31,8 +31,8 @@ const Navbar = () => {
       <div className="max-w-[90rem] mx-auto px-8 md:px-12 flex justify-between items-center">
         
         {/* Logo */}
-        <Link to="/" className="text-sm font-montserrat font-bold tracking-[0.2em] text-white-touch">
-          TRION <span className="text-gold font-normal">MEDIA</span>
+        <Link to="/" className="flex items-center">
+          <img src="/logo.jpg" alt="Trion Media" className="h-16 object-contain invert mix-blend-screen" />
         </Link>
 
         {/* Desktop Nav */}
@@ -57,7 +57,7 @@ const Navbar = () => {
 
         {/* Mobile Toggle */}
         <button 
-          className="md:hidden text-white-touch text-2xl focus:outline-none"
+          className="md:hidden text-white-touch text-2xl focus:outline-none cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <HiX /> : <HiMenu />}

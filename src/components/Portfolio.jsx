@@ -66,7 +66,7 @@ const Portfolio = () => {
           {categories.map((category, index) => (
             <button 
               key={index}
-              className={`px-5 py-[10px] text-[9px] tracking-[0.1em] font-montserrat transition-all duration-300 border ${
+              className={`px-5 py-[10px] text-[9px] tracking-[0.1em] font-montserrat transition-all duration-300 border cursor-pointer ${
                 index === 0 
                 ? 'bg-gold border-gold text-black font-semibold' 
                 : 'bg-transparent border-white-touch/20 text-white-touch/70 hover:border-white-touch hover:text-white-touch font-medium'
