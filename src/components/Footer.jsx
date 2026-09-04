@@ -5,7 +5,7 @@ const Footer = () => {
         
         {/* Left Side: Logo & Info */}
         <div>
-          <img src="/logo.jpg" alt="Trion Media" className="h-16 object-contain mb-4 invert mix-blend-screen" />
+          <img src="/trion-logo.png" alt="Trion Media" className="h-12 object-contain mb-4 " />
           <p className="text-[9px] font-montserrat tracking-[0.2em] text-white-touch/60 uppercase mb-4">
             CREATIVE PRODUCTION HOUSE &middot; DOHA, QATAR.
           </p>
