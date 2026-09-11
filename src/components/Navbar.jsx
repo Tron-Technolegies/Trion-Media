@@ -32,7 +32,7 @@ const Navbar = () => {
         
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <img src="/trion-logo.png" alt="Trion Media" className="h-10 object-contain " />
+          <img src="/trion-logo.png" alt="Trion Media" className="h-16 object-contain " />
         </Link>
 
         {/* Desktop Nav */}
