@@ -10,6 +10,7 @@ import CTA from '../components/CTA';
 import Clients from '../components/Clients';
 import FAQ from '../components/FAQ';
 import Contact from '../components/Contact';
+import Works from '../components/Works';
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <BehindTheCamera />
       <Process />
       <CTA />
+      <Works />
       <Clients />
       <FAQ />
       <Contact />
