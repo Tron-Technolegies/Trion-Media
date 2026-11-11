@@ -1,31 +1,31 @@
 import { useState } from "react";
 
-import celebration1 from "../assets/celebration1.jpg";
-import celebration2 from "../assets/celebration2.jpg";
-import celebration3 from "../assets/celebration3.jpg";
+import celebration1 from "../assets/celebration1.JPG";
+import celebration2 from "../assets/celebration2.JPG";
+import celebration3 from "../assets/celebration3.JPG";
 
-import Product from "../assets/Product.jpg";
-import product2 from "../assets/product2.jpg";
-import product3 from "../assets/product3.jpg";
+import Product from "../assets/Product.JPG";
+import product2 from "../assets/product2.JPG";
+import product3 from "../assets/product3.JPG";
 
 import sports1 from "../assets/sports1.jpg";
 import sports2 from "../assets/sports2.jpg";
 import sports3 from "../assets/sports3.jpg";
 
-import event1 from "../assets/event1.jpg";
+import event1 from "../assets/event1.JPG";
 import event2 from "../assets/event2.jpg";
 import event3 from "../assets/event3.jpg";
 import event4 from "../assets/event4.jpg";
 
-import fashion1 from "../assets/fashion1.jpg"
-import fashion2 from "../assets/fashion2.jpg"
-import fashion3 from "../assets/fashion3.jpg"
-import fashion4 from "../assets/fashion4.jpg"
+import fashion1 from "../assets/fashion1.jpg";
+import fashion2 from "../assets/fashion2.jpg";
+import fashion3 from "../assets/fashion3.jpg";
+import fashion4 from "../assets/fashion4.jpg";
 
-import actionsports1 from "../assets/actionsports1.jpg"
-import actionsports2 from "../assets/actionsports2.jpg"
-import actionsports3 from "../assets/actionsports3.jpg"
-import actionsports4 from "../assets/actionsports4.jpg"
+import actionsports1 from "../assets/actionsports1.jpg";
+import actionsports2 from "../assets/actionsports2.jpg";
+import actionsports3 from "../assets/actionsports3.jpg";
+import actionsports4 from "../assets/actionsports4.jpg";
 
 
 const Works = () => {
