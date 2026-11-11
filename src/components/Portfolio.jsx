@@ -17,7 +17,7 @@ const Portfolio = () => {
       title: "Corporate Company Profile"
     },
     {
-      img: "https://images.unsplash.com/photo-1414235077428-338988a2e8c0?q=80&w=2070&auto=format&fit=crop",
+      img: "https://images.unsplash.com/photo-1602261320832-b087fc36979a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
       category: "COMMERCIAL PRODUCTIONS",
       title: "Product Advertisement"
     },
@@ -27,7 +27,7 @@ const Portfolio = () => {
       title: "Restaurant Brand Commercial"
     },
     {
-      img: "https://images.unsplash.com/photo-1621643444005-cb51dc7384db?q=80&w=2070&auto=format&fit=crop",
+      img: "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
       category: "PHOTOGRAPHY",
       title: "Editorial Fashion Shoot"
     },
@@ -46,14 +46,14 @@ const Portfolio = () => {
   return (
     <section id="portfolio" className="py-24 bg-black">
       <div className="max-w-[90rem] mx-auto px-8 md:px-12">
-        
+
         {/* Header */}
         <div className="mb-12 max-w-3xl">
           <span className="text-gold text-[10px] tracking-[0.25em] font-montserrat font-semibold uppercase mb-6 block">
             PROJECT GALLERY
           </span>
           <h2 className="text-4xl md:text-[56px] font-montserrat font-light leading-[1.1] mb-6 text-white-touch">
-            Creativity Across Every<br/>Frame
+            Creativity Across Every<br />Frame
           </h2>
           <p className="text-white-touch/60 text-[14px] font-poppins font-light leading-relaxed max-w-xl mb-10">
             Our portfolio reflects our passion for visual storytelling, cinematic production, and creative excellence.
@@ -64,13 +64,12 @@ const Portfolio = () => {
         {/* Filters */}
         <div className="flex flex-wrap gap-2 mb-12">
           {categories.map((category, index) => (
-            <button 
+            <button
               key={index}
-              className={`px-5 py-[10px] text-[9px] tracking-[0.1em] font-montserrat transition-all duration-300 border cursor-pointer ${
-                index === 0 
-                ? 'bg-gold border-gold text-black font-semibold' 
+              className={`px-5 py-[10px] text-[9px] tracking-[0.1em] font-montserrat transition-all duration-300 border cursor-pointer ${index === 0
+                ? 'bg-gold border-gold text-black font-semibold'
                 : 'bg-transparent border-white-touch/20 text-white-touch/70 hover:border-white-touch hover:text-white-touch font-medium'
-              }`}
+                }`}
             >
               {category}
             </button>
@@ -81,9 +80,9 @@ const Portfolio = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {projects.map((project, index) => (
             <div key={index} className="group relative overflow-hidden aspect-[4/3] bg-[#111]">
-              <img 
-                src={project.img} 
-                alt={project.title} 
+              <img
+                src={project.img}
+                alt={project.title}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
                 loading="lazy"
               />
@@ -98,7 +97,7 @@ const Portfolio = () => {
             </div>
           ))}
         </div>
-        
+
         {/* View More */}
         <div className="flex justify-end mt-12">
           <a href="#portfolio" className="text-white-touch font-montserrat text-[13px] font-medium tracking-wide hover:text-gold border-b border-white-touch hover:border-gold transition-all duration-300 pb-1">
