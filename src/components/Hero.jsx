@@ -2,7 +2,7 @@ const Hero = () => {
   return (
     <section className="relative h-[100vh] flex items-center pt-32">
       {/* Background Image Overlay */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-100 z-0"
         style={{ backgroundImage: "url('/hero-bg.png')" }}
       >
@@ -18,9 +18,9 @@ const Hero = () => {
             <span className="text-gold">We Create Stories That Build Brands.</span>
           </h1>
           <p className="text-white-touch/60 text-[13px] md:text-[14px] mb-12 max-w-[42rem] font-poppins font-light leading-relaxed">
-Trion Media is a creative production house based in Doha, Qatar, delivering cinematic visuals, commercial productions, brand films, photography, and digital content for businesses, institutions, and organizations across Qatar.          </p>
+            Trion Media is a creative production house based in Doha, Qatar, delivering cinematic visuals, commercial productions, brand films, photography, and digital content for businesses, institutions, and organizations across Qatar.          </p>
           <div className="flex flex-wrap gap-4">
-            <a href="#portfolio" className="bg-gold text-black px-10 py-[14px] font-montserrat tracking-[0.15em] text-[10px] font-medium hover:bg-white-touch transition-all duration-300">
+            <a href="#works" className="bg-gold text-black px-10 py-[14px] font-montserrat tracking-[0.15em] text-[10px] font-medium hover:bg-white-touch transition-all duration-300">
               VIEW OUR WORK
             </a>
             <a href="#contact" className="border border-white-touch/20 text-white-touch px-10 py-[14px] font-montserrat tracking-[0.15em] text-[10px] font-medium hover:border-gold hover:text-gold transition-all duration-300">

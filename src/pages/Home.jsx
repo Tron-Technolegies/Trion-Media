@@ -19,12 +19,12 @@ const Home = () => {
       <Stats />
       <About />
       <Services />
+      <Works />
       <Portfolio />
       <Showreel />
       <BehindTheCamera />
       <Process />
       <CTA />
-      <Works />
       <Clients />
       <FAQ />
       <Contact />
