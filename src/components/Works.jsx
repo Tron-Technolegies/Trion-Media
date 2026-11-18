@@ -1,32 +1,9 @@
 import { useState } from "react";
-
-import celebration1 from "../assets/celebration1.JPG";
-import celebration2 from "../assets/celebration2.JPG";
-import celebration3 from "../assets/celebration3.JPG";
-
-import Product from "../assets/Product.JPG";
-import product2 from "../assets/product2.JPG";
-import product3 from "../assets/product3.JPG";
-
-import sports1 from "../assets/sports1.jpg";
+import sports from "../assets/sports.jpg";
 import sports2 from "../assets/sports2.jpg";
 import sports3 from "../assets/sports3.jpg";
-
 import event1 from "../assets/event1.JPG";
-import event2 from "../assets/event2.jpg";
-import event3 from "../assets/event3.jpg";
-import event4 from "../assets/event4.jpg";
-
-import fashion1 from "../assets/fashion1.jpg";
 import fashion2 from "../assets/fashion2.jpg";
-import fashion3 from "../assets/fashion3.jpg";
-import fashion4 from "../assets/fashion4.jpg";
-
-import actionsports1 from "../assets/actionsports1.jpg";
-import actionsports2 from "../assets/actionsports2.jpg";
-import actionsports3 from "../assets/actionsports3.jpg";
-import actionsports4 from "../assets/actionsports4.jpg";
-
 
 const Works = () => {
     const [carouselIndexes, setCarouselIndexes] = useState({
@@ -38,42 +15,88 @@ const Works = () => {
         actionsports: 0
     });
 
-
+    const [reelIndex, setReelIndex] = useState(0);
 
     const projects = [
+
         {
             type: "celebration",
-            images: [celebration1, celebration2, celebration3],
+            images: [
+                "https://res.cloudinary.com/veprql8d/image/upload/v1794981077/celebration2.jpg",
+                "https://res.cloudinary.com/veprql8d/image/upload/v1794981078/celebration3.jpg",
+                "https://res.cloudinary.com/veprql8d/image/upload/v1794981074/celebration1.jpg"
+            ],
             title: "Celebrations"
         },
         {
             type: "product",
-            images: [Product, product2, product3],
+            images: [
+                "https://res.cloudinary.com/veprql8d/image/upload/v1794981081/Product.jpg",
+                "https://res.cloudinary.com/veprql8d/image/upload/v1794981077/product1.jpg",
+                "https://res.cloudinary.com/veprql8d/image/upload/v1794981071/product3.jpg"
+            ],
             title: "Product"
         },
         {
             type: "sports",
-            images: [sports1, sports2, sports3],
+            images: [sports, sports2, sports3],
             title: "Sports"
         },
         {
             type: "event",
-            images: [event1, event2, event3, event4],
+            images: [
+                "https://res.cloudinary.com/veprql8d/image/upload/v1794981046/event3.jpg",
+                event1,
+                "https://res.cloudinary.com/veprql8d/image/upload/v1794981047/event2.jpg",
+                "https://res.cloudinary.com/veprql8d/image/upload/v1794980751/event4.jpg",
+                "https://res.cloudinary.com/veprql8d/image/upload/v1794980875/event5.jpg"
+            ],
             title: "Event"
         },
         {
             type: "fashion",
-            images: [fashion1, fashion2, fashion3, fashion4],
+            images: [
+                "https://res.cloudinary.com/veprql8d/image/upload/v1794980748/fashion3.jpg",
+                "https://res.cloudinary.com/veprql8d/image/upload/v1794980749/fashion4.jpg",
+                "https://res.cloudinary.com/veprql8d/image/upload/v1794980995/fashion1.jpg",
+                "https://res.cloudinary.com/veprql8d/image/upload/v1794985358/fashion5.jpg",
+                fashion2
+            ],
             title: "Fashion"
         },
         {
             type: "actionsports",
-            images: [actionsports1, actionsports2, actionsports3, actionsports4],
+            images: [
+                "https://res.cloudinary.com/veprql8d/image/upload/v1794980994/actionsports1.jpg",
+                "https://res.cloudinary.com/veprql8d/image/upload/v1794980958/actionsports2.jpg",
+                "https://res.cloudinary.com/veprql8d/image/upload/v1794980957/actionsports4.jpg",
+                "https://res.cloudinary.com/veprql8d/image/upload/v1794980953/actionsports3.jpg",
+                "https://res.cloudinary.com/veprql8d/image/upload/v1794980873/actionsports5.jpg"
+            ],
             title: "Action Sports"
         },
+    ];
+
+    const reels = [
         {
-            img: "https://images.unsplash.com/photo-1541300613939-71366b37c92e?q=80&w=2104&auto=format&fit=crop",
-            title: "Reels"
+            title: "Reel 01",
+            url: "https://res.cloudinary.com/veprql8d/video/upload/v1794980415/1030.mov"
+        },
+        {
+            title: "Reel 02",
+            url: "https://res.cloudinary.com/veprql8d/video/upload/v1794986050/SWEETHA_ASHOOK_REEL.mov"
+        },
+        {
+            title: "Reel 03",
+            url: "https://res.cloudinary.com/veprql8d/video/upload/v1794980489/BIRTHDAY_2.mov"
+        },
+        {
+            title: "Reel 04",
+            url: "https://res.cloudinary.com/veprql8d/video/upload/v1794980495/CPA_PADEL_TEASER_FN.mov"
+        },
+        {
+            title: "Reel 05",
+            url: "https://res.cloudinary.com/veprql8d/video/upload/v1794980722/REEL_DUM_DUM_TRION.mov"
         }
     ];
 
@@ -144,7 +167,7 @@ const Works = () => {
                         return (
                             <div
                                 key={index}
-                                className="group relative overflow-hidden aspect-[4/3] bg-[#111]"
+                                className="group relative overflow-hidden aspect-[3/4] bg-[#111]"
                             >
                                 <img
                                     src={currentImage}
@@ -158,7 +181,7 @@ const Works = () => {
                                     <>
                                         <button
                                             onClick={(e) => prevImage(e, project)}
-                                            className="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/60 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-gold hover:text-black"
+                                            className="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/60 text-white flex items-center justify-center opacity-100 transition-opacity duration-300 hover:bg-gold hover:text-black"
                                             aria-label="Previous image"
                                         >
                                             &#10094;
@@ -166,7 +189,7 @@ const Works = () => {
 
                                         <button
                                             onClick={(e) => nextImage(e, project)}
-                                            className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/60 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-gold hover:text-black"
+                                            className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/60 text-white flex items-center justify-center opacity-100 transition-opacity duration-300 hover:bg-gold hover:text-black"
                                             aria-label="Next image"
                                         >
                                             &#10095;
@@ -202,6 +225,96 @@ const Works = () => {
                     })}
 
                 </div>
+
+
+
+                {/* Reels Section */}
+
+                {/* Reels Section */}
+                <div className="mt-20">
+
+                    {/* Reels Header */}
+                    <div className="mb-10">
+                        <span className="text-gold text-[10px] tracking-[0.25em] font-montserrat font-semibold uppercase mb-4 block">
+                            CINEMATIC VIDEOS
+                        </span>
+
+                        <h3 className="text-3xl md:text-5xl font-montserrat font-light text-white-touch mb-4">
+                            Reels & Films.
+                        </h3>
+
+                        <p className="text-white-touch/60 text-sm font-poppins font-light max-w-xl">
+                            Explore our collection of cinematic reels and creative video productions.
+                        </p>
+                    </div>
+
+                    {/* Reels Carousel */}
+                    <div className="relative">
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+
+                            {[0, 1].map((offset) => {
+                                const video = reels[(reelIndex + offset) % reels.length];
+
+                                return (
+                                    <div
+                                        key={video.title}
+                                        className="group relative overflow-hidden aspect-[3/4] bg-[#111] rounded-xl"
+                                    >
+                                        <video
+                                            src={video.url}
+                                            controls
+                                            muted
+                                            playsInline
+                                            preload="metadata"
+                                            className="w-full h-full object-cover"
+                                        />
+
+                                        {/* <div className="absolute top-4 left-4 pointer-events-none"> */}
+                                        {/* <span className="text-white text-xs tracking-widest font-montserrat bg-black/50 px-3 py-2 rounded">
+                                                {video.title}
+                                            </span> */}
+                                        {/* </div> */}
+                                    </div>
+                                );
+                            })}
+
+                        </div>
+
+                        {/* Carousel Navigation */}
+                        <div className="flex justify-center gap-4 mt-8">
+
+                            <button
+                                onClick={() =>
+                                    setReelIndex((prev) =>
+                                        (prev - 1 + reels.length) % reels.length
+                                    )
+                                }
+                                className="w-10 h-10 rounded-full border border-white/30 text-white hover:bg-gold hover:text-black hover:border-gold transition-all"
+                                aria-label="Previous reels"
+                            >
+                                &#10094;
+                            </button>
+
+                            <button
+                                onClick={() =>
+                                    setReelIndex((prev) =>
+                                        (prev + 1) % reels.length
+                                    )
+                                }
+                                className="w-10 h-10 rounded-full border border-white/30 text-white hover:bg-gold hover:text-black hover:border-gold transition-all"
+                                aria-label="Next reels"
+                            >
+                                &#10095;
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
 
                 {/* View More */}
                 <div className="flex justify-end mt-12">
