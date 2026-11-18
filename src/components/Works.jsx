@@ -51,7 +51,7 @@ const Works = () => {
                 "https://res.cloudinary.com/veprql8d/image/upload/v1794980751/event4.jpg",
                 "https://res.cloudinary.com/veprql8d/image/upload/v1794980875/event5.jpg"
             ],
-            title: "Event"
+            title: "Events"
         },
         {
             type: "fashion",
