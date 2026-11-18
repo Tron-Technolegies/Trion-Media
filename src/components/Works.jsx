@@ -1,5 +1,5 @@
 import { useState } from "react";
-import sports from "../assets/sports.jpg";
+import Sports from "../assets/Sports.jpg";
 import sports2 from "../assets/sports2.jpg";
 import sports3 from "../assets/sports3.jpg";
 import event1 from "../assets/event1.JPG";
@@ -39,7 +39,7 @@ const Works = () => {
         },
         {
             type: "sports",
-            images: [sports, sports2, sports3],
+            images: [Sports, sports2, sports3],
             title: "Sports"
         },
         {
